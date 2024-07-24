@@ -8,7 +8,7 @@ CVE-2024-41468
 
 ### Vulnerability details
 
-Tenda FH1201 v1.2.0.14 has a stack overflow vulnerability located in the exeCommand function.The cmdinput parameter is copied to stack space v7 without any filtering, and then executed, so an attacker can exploit this vulnerability to execute arbitrary commands
+Tenda FH1201 v1.2.0.14 has a command injection vulnerability located in the exeCommand function.The cmdinput parameter is copied to stack space v7 without any filtering, and then executed, so an attacker can exploit this vulnerability to execute arbitrary commands
 
 ![image-20240724103726318](./image-20240724103726318.png)
 
