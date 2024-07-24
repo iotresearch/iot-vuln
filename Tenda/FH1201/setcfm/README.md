@@ -8,7 +8,7 @@ CVE-2024-41465
 
 ### Vulnerability details
 
-Tenda FH1201 v1.2.0.14 has a stack overflow vulnerability located in the setcfm function.The parameter funcpara1 is copied to stackspace v10 via the sprintf function without checking the length,so an attacker can cause a denial of service attack by controlling the page parameter
+Tenda FH1201 v1.2.0.14 has a stack overflow vulnerability located in the setcfm function.The parameter funcpara1 is copied to stackspace v10 via the sprintf function without checking the length,so an attacker can cause a denial of service attack by controlling the funcpara1 parameter
 
 ![image-20240724100556341](./image-20240724100556341.png)
 
