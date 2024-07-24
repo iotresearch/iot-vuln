@@ -8,7 +8,7 @@ CVE-2024-41464
 
 ### Vulnerability details
 
-Tenda FH1201 v1.2.0.14 has a stack overflow vulnerability located in the RouteStatic function.The parameter mitInterface is copied to stackspace v6 via the sprintf function without checking the length,so an attacker can cause a denial of service attack by controlling the page parameter
+Tenda FH1201 v1.2.0.14 has a stack overflow vulnerability located in the RouteStatic function.The parameter mitInterface is copied to stackspace v6 via the sprintf function without checking the length,so an attacker can cause a denial of service attack by controlling the mitInterface parameter
 
 ![image-20240724100048396](./image-20240724100048396.png)
 
