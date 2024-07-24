@@ -8,7 +8,7 @@ CVE-2024-41463
 
 ### Vulnerability details
 
-Tenda FH1201 v1.2.0.14 has a stack overflow vulnerability located in the DhcpListClient function.The parameter entrys is copied to stackspace v6 via the sprintf function without checking the length,so an attacker can cause a denial of service attack by controlling the page parameter
+Tenda FH1201 v1.2.0.14 has a stack overflow vulnerability located in the addressNat function.The parameter entrys is copied to stackspace v6 via the sprintf function without checking the length,so an attacker can cause a denial of service attack by controlling the page parameter
 
 ![image-20240724095512087](./image-20240724095512087.png)
 
